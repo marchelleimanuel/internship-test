@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI</title>
+    <link rel="stylesheet" href="../css/menu.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li>
+                <a href="./view_data.html">View Data</a>
+            </li>
+            <li>
+                <a href="./add_data.html">Add Data</a>
+            </li>
+            <li>
+                <a href="./edit_data.html">Edit data</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <form id="addProductForm">
+            <label for="id">ID:</label>
+            <input type="text" id="id" required>
+
+            <label for="productID">Product ID:</label> 
+            <input type="text" id="productID" required>
+
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+
+            <label for="amount">Amount:</label>
+            <input type="text" id="amount" required>
+
+            <label for="customerName">Customer Name:</label>
+            <input type="text" id="customerName" required>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="0">SUCCESS</option>
+                <option value="1">FAILED</option>
+            </select>
+
+            <label for="createBy">Create By: </label>
+            <input type="text" id="createBy" required>
+
+            <button type="submit" id="submit-btn">Add Product</button>
+        </form>
+    </main>
+<script src="../js/add_data.js"></script>
+</body>
+</html>
